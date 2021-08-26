@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 git remote set-url origin https://$2@github.com/sy3c4ll/noahs-capsule.git
-git clone https://github.com/sy3c4ll/dismanet.git && cd dismanet
+cd dismanet
 ./dismanet_enable.sh && ./dismanet_connect.sh &
 cd ..
 while [ : ];do
