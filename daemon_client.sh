@@ -3,8 +3,8 @@ cd dismanet
 ./dismanet_enable && ./dismanet_connect &
 cd ..
 while [ : ];do
-  print "0">land
-  print "0">water
+  python scripts/gy521.py land
+  python scripts/hcsr04.py water
   cd dismanet
   ./dismanet_send ../land
   ./dismanet_send ../water
